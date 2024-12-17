@@ -1,0 +1,1 @@
+This repository demonstrates a common mistake in Dockerfiles: neglecting to clean up after using `apt-get`.  The original Dockerfile installs Python but leaves behind unnecessary packages and cache from the installation process.  The fixed version shows how to efficiently clean up temporary files to reduce the image size and improve build times.
